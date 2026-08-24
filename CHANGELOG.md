@@ -1,3 +1,24 @@
+# 1.2.0
+
+Released on Friday, August 21 2026.
+
+- Updated to complete DTD identity and reference validation semantics (#31)
+- Improved preservation of CDATA sections as first-class DOM nodes (#30)
+- Added the XML-specific `CDATA` factory (#29)
+- Added support for XML document metadata (#29)
+- Added Canonical XML 1.1 and Exclusive XML Canonicalization 1.0 serialization (#34)
+- Added XML Base, `xml:id`, and inherited `xml:lang` convenience semantics (#33)
+- Added optional XSD 1.0 document validation with diagnostics (#35)
+
+# 1.1.0
+
+Released on Friday, July 31 2026.
+
+- Updated to use a minimum of AngleSharp 1.5
+- Fixed serialization of self-closing in case of children (#27)
+- Fixed namespace declaration processing (#22) @jbrayfaithlife
+- Added optional DTD validation
+
 # 1.0.0
 
 Released on Sunday, January 15 2023.

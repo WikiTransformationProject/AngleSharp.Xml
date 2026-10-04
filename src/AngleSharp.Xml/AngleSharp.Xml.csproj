@@ -3,6 +3,12 @@
     <AssemblyName>AngleSharp.Xml</AssemblyName>
     <RootNamespace>AngleSharp.Xml</RootNamespace>
     <TargetFrameworks>net8.0</TargetFrameworks>
+    <!-- v============= HEU/LLM: Keep package locks and audit all dependencies; keep SourceLink off. ========== -->
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <EnableSourceLink>false</EnableSourceLink>
+    <EnableSourceControlManagerQueries>false</EnableSourceControlManagerQueries>
+    <!-- ^=================================================================== -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -23,7 +29,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <!-- v============= HEU/LLM: Keep the SourceLink package reference off. ========== -->
+    <!-- <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/> -->
+    <!-- ^=================================================================== -->
   </ItemGroup>
 
   <ItemGroup>
